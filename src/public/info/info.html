@@ -1,0 +1,11 @@
+<p ng-if="info.msg">{{info.msg}} <a ui-sref="public.regform">Sign up Now!</a></p>
+<div ng-if="info.user">
+<p>Firstname: {{info.user.firstname}}</p>
+<p>Lastname: {{info.user.lastname}}</p>
+<p>Email: {{info.user.email}}</p>
+<p>Phone: {{info.user.phone}}</p>
+<p>Favourite Menu Item</P>
+<p>Title: {{info.user.title}}</P>
+<p>Description: {{info.user.description}}</P>
+<p><img class="img-responsive" width="250" height="150" ng-src="{{info.basePath}}/images/{{info.user.short_name}}.jpg" ></P>
+</div>
